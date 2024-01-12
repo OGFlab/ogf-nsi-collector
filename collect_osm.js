@@ -38,7 +38,7 @@ collect('network', NETWORKKEYS, 10);
 
 function collect(tag, fromKeys, threshold) {
   const what = `${tag}s`;   // names, brands, operators, networks
-  const file = `dist/osm/${what}_all.json`;
+  const file = `dist/ogf/${what}_all.json`;
 
   const START = '🏗   ' + chalk.yellow(`Collecting ${what} from OSM planet...`);
   const END = '👍  ' + chalk.green(`${what} collected`);
