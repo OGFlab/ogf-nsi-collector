@@ -1,23 +1,24 @@
 {
   "name": "@ideditor/nsi-collector",
-  "version": "1.0.0",
+  "version": "1.0.20230619",
   "license": "ISC",
   "repository": "github:ideditor/nsi-collector",
   "description": "Scripts to collect names for the name-suggestion-index project.",
   "contributors": [
     "Bryan Housel <bhousel@gmail.com> (https://github.com/bhousel)",
-    "Tim Smith <tsmith@chef.io> (https://github.com/tas50)"
+    "Tim Smith <tim@mondoo.com> (https://github.com/tas50)"
   ],
   "devDependencies": {
     "@aitodotai/json-stringify-pretty-compact": "1.3.0",
-    "colors": "1.1.2",
+    "chalk": "4.1.2",
     "locale-compare": "1.0.0",
     "osmium": "0.5.7",
-    "shelljs": "0.8.0"
+    "shelljs": "^0.8.5"
   },
   "scripts": {
+    "version": "node bump_version.js"
   },
-  "engines": {
-    "node": "10"
+  "publishConfig": {
+    "access": "public"
   }
 }
